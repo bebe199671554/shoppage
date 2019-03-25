@@ -1,0 +1,106 @@
+@import "normalize";
+html {
+    font-size: 16px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Segoe UI", "微軟正黑體", sans-serif;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #555;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+@mixin photo($url, $width, $height) {
+    width: $width;
+    height: $height;
+    background: url($url) no-repeat;
+    background-size: 100% 100%;
+    text-indent: 110%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+a {
+    color: #009ced;
+    text-decoration: none;
+    &:hover {
+        color: #0081c3;
+        text-decoration: underline;
+    }
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.index-image {
+    height: 550px;
+    background: url(../images/girlshopping-1024x683.jpg) center center no-repeat;
+    background-size: cover;
+    .container {
+        position: relative;
+        height: 100%;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: normal;
+        color: rgba(255, 255, 255, 1);
+        text-shadow: rgba( #000000, $alpha: 0.8)0 0 5px;
+        position: absolute;
+        margin: 0 0 0 30px;
+        left: 20px;
+        top: 100px;
+    }
+    span {
+        display: block;
+        position: relative;
+        left: 2em;
+    }
+}
+
+.textaboutshop {
+    padding: 40px 0;
+    background-color: #979797;
+    color: #fff;
+    p {
+        font-weight: normal;
+    }
+    h1 {
+        margin-top: 0;
+    }
+}
+
+.commodity-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // justify-content: space-around;
+    a {
+        text-decoration: none;
+    }
+    list-style: none;
+    ul {
+        list-style: none;
+    }
+}
+
+.commodity {
+    padding: 20px;
+    color: #000000;
+    h4 {
+        margin: 0;
+    }
+    // line-height: 0.5 em;
+    .cash {
+        font-weight: normal;
+    }
+}
+
+@import "stylestop";
+@import "stylesbottom";
+@import "item";
+@import "cart";

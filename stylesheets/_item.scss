@@ -1,0 +1,144 @@
+@mixin photo($url, $width, $height) {
+    width: $width;
+    height: $height;
+    background: url($url) no-repeat;
+    background-size: 100% 100%;
+    text-indent: 110%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tiempage {
+    .container {
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 70%;
+    }
+    .uppage {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        li {
+            padding: 0 0 0 3px;
+        }
+        i {
+            padding: 0 0 0 2px;
+        }
+        padding: 0;
+        margin-bottom: 5%;
+        a {
+            color: #000000;
+        }
+    }
+    .itemlist {
+        display: flex;
+        padding: 0px 0px 0px 30px;
+        text-align: left;
+        flex-direction: column;
+    }
+    .item {
+        // margin: 50px 0;
+        padding: 0px;
+        display: flex;
+    }
+    .itemnub {
+        height: 50px;
+        width: 90px;
+    }
+    .textitem {
+        width: 518px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        img {
+            width: 518px;
+            height: 518px;
+            background: url(images/HUB-518X518.jpg) no-repeat;
+            background-size: 100% 100%;
+            text-indent: 110%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        p {
+            margin: 0;
+            line-height: 1em;
+        }
+    }
+    .itemname {
+        border-bottom-style: solid;
+        padding-bottom: 5%;
+        h2 {
+            margin: 5px 0;
+        }
+        h4 {
+            font-weight: normal;
+            // line-height: 0;
+            margin-top: 3px;
+        }
+        h3 {
+            margin: 15px 0 10px 0;
+        }
+        .pay {
+            font-weight: normal;
+            margin: 30px 0;
+        }
+    }
+    .othershop {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        display: flex;
+        flex-basis: auto;
+        // margin-bottom: 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none;
+        a {
+            display: flex;
+            color: #000000;
+        }
+        li {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            // display: inline;
+        }
+        h3 {
+            margin-left: 10px;
+        }
+    }
+    // .itemphotos {
+    //     width: 100px;
+    //     height: 100px;
+    //     background-color: azure;
+    // }
+    .selectitme {
+        height: 50px;
+        width: 350px;
+    }
+    .gocart {
+        margin: 20px 0;
+        height: 50px;
+        width: 350px;
+        color: #ffffff;
+        background-color: #000000;
+    }
+    .container1 {
+        width: 35%;
+        margin: 0 auto;
+    }
+    .upnext {
+        list-style: none;
+        margin: 30px 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        i {
+            padding: 0 5px;
+        }
+        a {
+            color: #000000;
+        }
+    }
+}

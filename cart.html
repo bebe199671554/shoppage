@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>瞎拚網</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div class="webtop">
+
+            <div class="webtop-in"></div>
+            <!-- <iframe src="webtop.html" frameborder="0" class="webtop-in">
+        
+                    </iframe> -->
+        </div>
+
+    </header>
+    <div class="cartpage">
+        <div class="container3">
+            <p><i class="fas fa-chevron-left "></i>繼續購物</p>
+            <table style="width:100%">
+                <tr>
+                    <th colspan="2" class="box1h">購物車(1)</th>
+                    <th class="box2tl trc">價格</th>
+                    <th class="box3tl trc">數量</th>
+                    <th class="box4tr trc">小計</th>
+
+                </tr>
+                <tr class="brodera" style="border-top:1px rgb(182, 182, 182) solid;border-bottom: 1px rgb(182, 182, 182) solid;">
+                    <td colspan="2" rowspan="2" class="brin">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/commodity-100.jpg" />
+                                </a>
+                                <div>
+                                    <h3>什麼什麼彩妝盤[自然色]</h3>
+
+                                    <h5>YR-5640</h5>
+
+                                    <a href="#">
+                                        <h5>刪除</h5>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </td>
+                    <td>
+                    </td>
+                    <td rowspan="2" class="trc">$1750</td>
+                    <td rowspan="2" class="trc"> <input type="text" name="fname"></td>
+                    <td rowspan="2" class="trc">$1750</td>
+                </tr>
+                <tr>
+
+                </tr>
+                <tr class="th2">
+                    <td colspan="2" rowspan="4">使用折扣碼：
+                        <input type="text" name="cartname" class="cartnum"></td>
+                    <td class="trr">商品金額</td>
+                    <td> </td>
+                    <td class="trc">$1750</td>
+                </tr>
+                <tr>
+                    <td class="trr">運費</td>
+                    <td> </td>
+                    <td class="trc">$0</td>
+                </tr>
+                <tr>
+                    <td class="trr">總計</td>
+                    <td> </td>
+                    <td class="trc">
+                        <h3>$1750</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="trc"> <button class="gotoshop">結帳</button></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer ">
+        <div class="webbottom ">
+            <div class="webbottom-in "></div>
+            <!-- <iframe src="webbottom.html " frameborder="0 " class="webbottom-in ">
+        
+                    </iframe> -->
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
+    <script>
+        $(function() {
+            $.get("webtop.html ", function(data) {
+                $(".webtop-in ").html(data);
+            });
+
+            $.get("webbottom.html ", function(data) {
+                $(".webbottom-in ").html(data);
+            });
+        });
+        $(function() {
+            if ($(".main-menu button ").is(":visible ")) {
+                $(".main-menu ul ").hide();
+                $(".main-menu button ").on("click ", function() {
+                    $(".main-menu ul ").toggle();
+                    $(".main-menu button i ").toggleClass("fa-chevron-down ").toggleClass("fa-chevron-up ")
+                });
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

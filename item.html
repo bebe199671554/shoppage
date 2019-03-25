@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>瞎拚網</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div class="webtop">
+
+            <div class="webtop-in"></div>
+            <!-- <iframe src="webtop.html" frameborder="0" class="webtop-in">
+    
+                </iframe> -->
+        </div>
+
+    </header>
+
+    <div class="tiempage">
+        <div class="container">
+
+            <ul class="uppage">
+                <li><a href="index.html">首頁</a></li>
+                <li><i class="fas fa-caret-right"></i><a href="#">化妝品</a></li>
+                <li><i class="fas fa-caret-right"></i><a href="#">眼影</a></li>
+            </ul>
+            <div class="item">
+                <div class="textitem">
+                    <img src="images/HUB-518X518.jpg" />
+                    <p>
+
+                        沙漠黃昏眼影盤剛推出不久就已經成為不少女生的新寵兒，整個眼影盤共包括了18種顏色，主打各款暖霧秋日棕、乾燥玫瑰及落日橘紅色調，質感分為霧面及閃爍兩種，包裝以亮面的紫羅蘭色設計，簡約得來也不失格調，盒子封面以品牌創辦人Huda Kattan富有中東色彩的打扮為生招牌。
+                        </br>
+                        </br>沙漠黃昏眼影盤剛推出不久就已經成為不少女生的新寵兒，整個眼影盤共包括了18種顏色，主打各款暖霧秋日棕、乾燥玫瑰及落日橘紅色調，質感分為霧面及閃爍兩種，包裝以亮面的紫羅蘭色設計，簡約得來也不失格調，盒子封面以品牌創辦人Huda Kattan富有中東色彩的打扮為生招牌。
+                        </br>
+                        </br> 沙漠黃昏眼影盤剛推出不久就已經成為不少女生的新寵兒，整個眼影盤共包括了18種顏色，主打各款暖霧秋日棕、乾燥玫瑰及落日橘紅色調，質感分為霧面及閃爍兩種，包裝以亮面的紫羅蘭色設計，簡約得來也不失格調，盒子封面以品牌創辦人Huda Kattan富有中東色彩的打扮為生招牌。
+                    </p>
+                </div>
+                <div class="itemlist ">
+
+                    <div class="itemname ">
+                        <h2>神采飛揚 沙漠黃昏眼影盤</h2>
+                        <h4>YR-5640</h4>
+                        <h3 class="pay">
+                            $ 1750
+                        </h3>
+                        <h3>規格</h3>
+                        <select class="selectitme">
+                                <option value ="">請選擇</option>
+                                <option value ="">Saab</option>
+                                <option value="">Opel</option>
+                                <option value="">Audi</option>
+                        </select>
+                        <h3>數量</h3>
+                        <input type="text" name="fname" class="itemnub" placeholder="請輸入數量" /></br>
+                        <button class="gocart">放入購物車</button>
+                    </div>
+                    <div class="otheritem ">
+                        <h3>相關推薦商品</h3>
+                        <ul class="othershop">
+                            <li>
+                                <a href="#">
+                                    <img src="images/commodity-100.jpg" />
+                                </a>
+
+                                <h3>華麗燦爛花朵眼影盤</br>$ 899</h3>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/commodity-100.jpg" />
+                                </a>
+                                <h3>華麗燦爛花朵眼影盤</br>$ 899</h3>
+
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/commodity-100.jpg" />
+                                </a>
+                                <h3>華麗燦爛花朵眼影盤</br>$ 899</h3>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <ul class="upnext">
+                    <li>
+                        <i class="fas fa-chevron-left "></i><a href="# ">上一項商品</a>
+                    </li>
+                    <li>
+                        <a href="# ">下一項商品</a><i class="fas fa-chevron-right "></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer ">
+        <div class="webbottom ">
+            <div class="webbottom-in "></div>
+            <!-- <iframe src="webbottom.html " frameborder="0 " class="webbottom-in ">
+        
+                    </iframe> -->
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
+    <script>
+        $(function() {
+            $.get("webtop.html ", function(data) {
+                $(".webtop-in ").html(data);
+            });
+
+            $.get("webbottom.html ", function(data) {
+                $(".webbottom-in ").html(data);
+            });
+        });
+        $(function() {
+            if ($(".main-menu button ").is(":visible ")) {
+                $(".main-menu ul ").hide();
+                $(".main-menu button ").on("click ", function() {
+                    $(".main-menu ul ").toggle();
+                    $(".main-menu button i ").toggleClass("fa-chevron-down ").toggleClass("fa-chevron-up ")
+                });
+            }
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
